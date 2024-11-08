@@ -1,3 +1,17 @@
+function sortSongs() {
+    let list = document.getElementById('songList');
+    let songs = Array.from(list.querySelectorAll('li'));
+
+    // Sort the songs alphabetically by their text content
+    songs.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+    // Clear the list and re-append the sorted items
+    list.innerHTML = '';
+    songs.forEach(song => list.appendChild(song));
+}
+
+
+
 function filterSongs() {
     const searchInput = document.getElementById('searchBar').value.toLowerCase();
     const songs = document.getElementById('songList').getElementsByTagName('li');
