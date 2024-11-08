@@ -1,0 +1,52 @@
+//#TITLE
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#TITLE</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>#TITLE</h1>
+        <a href="../index.html">Back to Home</a>
+        <div class="lyrics">
+
+<p>
+#PARA0
+</p>
+
+<p>
+१।<br>
+#PARA1
+</p>
+
+<p>
+२।<br>
+#PARA2
+</p>
+
+<p>
+३।<br>
+#PARA3
+</p>
+
+<p>
+४।<br>
+#PARA4
+</p>
+
+<p>
+5।<br>
+#PARA5
+</p>
+
+        </div>
+    </div>
+</body>
+</html>
+
