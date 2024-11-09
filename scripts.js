@@ -7,7 +7,7 @@ window.onload = function() {
     songs.sort((a, b) => {
         const transliterationA = a.getAttribute('data-transliteration').toLowerCase();
         const transliterationB = b.getAttribute('data-transliteration').toLowerCase();
-        return transliterationA.localeCompare(transliterationB);
+        return transliterationA.localeCompare(transliterationB, 'en', { sensitivity: 'base' });
     });
 
     // Append sorted songs back to the song list
