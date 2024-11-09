@@ -20,10 +20,13 @@ function filterSongs() {
 
     for (let i = 0; i < songs.length; i++) {
         const song = songs[i].getAttribute('data-transliteration');
-        if (song.toLowerCase().indexOf(searchInput) > -1) {
+        
+        // Display all items if search bar is empty, otherwise filter based on search term
+        if (searchInput === "" || song.toLowerCase().includes(searchInput)) {
             songs[i].style.display = "";
         } else {
             songs[i].style.display = "none";
         }
     }
 }
+
